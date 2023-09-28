@@ -1,0 +1,22 @@
+
+/*
+Only block level elements are transformable
+If you want to transform an inline element, make it inline-block
+*/
+.wrapper {
+    width: 200px;
+    height: 200px;
+    border: 1px dashed red;
+    margin: 0 auto;
+}
+
+.inner {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+span {
+    display: inline-block;
+    transform: rotate(45deg);
+}

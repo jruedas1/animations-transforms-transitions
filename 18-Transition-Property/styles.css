@@ -1,0 +1,20 @@
+/*
+
+transition-property: none | all | property name
+
+
+*/
+
+.transition {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.transition:hover {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+}

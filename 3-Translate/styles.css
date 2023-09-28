@@ -1,0 +1,35 @@
+/*
+translate -> moves elements in vertical or horizontal directions
+
+we use the translate function with the transform property
+
+transform: translate() -> syntax
+translate(tx, ty) or translate(tx)
+tx -> the length of the translation to x axis
+ty -> the length of the translation to y axis
+can be length values or percentages
+
+*/
+
+.wrapper {
+    width: 300px;
+    height: 300px;
+    border: 1px dashed red;
+    margin: 0 auto;
+}
+
+.inner {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    /* transform only on x axis*/
+    /* transform: translate(-50%); */
+    /*    transform only on y axis*/
+    /*transform: translate(0, 50px);*/
+    /* transform on both axes */
+    /*transform: translate(50px, 50px);*/
+    /* transform in x axis (syntactic sugar)   */
+    /*transform: translateX(50px);*/
+    /*  transform in y axis (syntactic sugar   */
+    transform: translateY(50px);
+}

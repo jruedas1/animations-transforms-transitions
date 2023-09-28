@@ -1,0 +1,32 @@
+
+/*
+
+rotate -> rotates elements in 2d space
+transform: rotate(a)
+a = angle
+-> positive: clockwise rotation
+-> negative: counterclockwise rotation
+units:
+360 degrees = 1 full rotation -> symbol: deg
+400 gradians = 1 full rotation -> grad
+radians -> 2 * pi radians = 1 full rotation = 2* 3.14 = 6.28 radians = 1 full rotation -> symbol: rad
+1 radian = c. 57 degrees
+turn -> 1 turn = 1 full rotation -> symbol: turn
+turn can only go to one decimal place
+*/
+.wrapper {
+    width: 200px;
+    height: 200px;
+    border: 1px dashed red;
+    margin: 0 auto;
+}
+
+.inner {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    /*  degrees  */
+    /*transform: rotate(30deg);*/
+    /*transform: rotate(-30deg);*/
+    transform: rotate(0.2turn);
+}

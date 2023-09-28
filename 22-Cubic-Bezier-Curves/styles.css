@@ -1,0 +1,18 @@
+.transition {
+    color: white;
+    background-color: red;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    transition-property: margin-left;
+    transition-duration: 2s;
+}
+
+.container:hover .transition {
+    margin-left: 500px;
+}
+
+.cubic {
+    /*transition-timing-function: linear;*/
+    transition-timing-function: cubic-bezier(0.57, 0.8, 0.59, 0.36);
+}

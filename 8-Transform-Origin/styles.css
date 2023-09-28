@@ -1,0 +1,31 @@
+
+/*
+    transform-origin
+    default value is transform-origin: center center | 50% 50%;
+
+    transform-origin xAxis yAxis
+
+    xAxis can be left, right, top, bottom, center, percentage
+
+*/
+.wrapper {
+    width: 200px;
+    height: 200px;
+    border: 1px dashed red;
+    margin: 0 auto;
+}
+
+.inner {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    transform: rotate(20deg);
+    /*transform-origin: top left;*/
+/*    = transform-origin: 0% 0%*/
+/*    0 100 = left bottom corner*/
+/*    100 100 = right bottom corner */
+/*    100 0 = right top corner*/
+
+    /*transform-origin: 120% -20%;*/
+}
+

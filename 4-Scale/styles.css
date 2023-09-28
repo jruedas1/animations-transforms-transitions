@@ -1,0 +1,39 @@
+
+/*
+
+scale -> resize elements in 2D space
+transform: scale();
+scale(sx, sy);
+scale(sx)
+scaleX(sx)
+scaleY(sx)
+These arguments are only numbers, not lengths or percentages
+sx: the amount of the resize of the element in horizontal direction
+sy: the amount of the resize of the element in vertical direction
+integers, zero, or decimals
+they are the ratio of our resize operation
+ratios between 0 and 1 make elements smaller
+ratios greater than 1 make elements larger
+NOTE: in FF, borders can disappear on transform: scale(<1) if very thin
+*/
+.wrapper {
+    width: 200px;
+    height: 200px;
+    border: 1px dashed red;
+    margin: 0 auto;
+}
+
+.inner {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    /* both axes */
+    /*transform: scale(1.5, 1.5);*/
+    /* syntactic sugar for scaling same on both axes: */
+    /*transform: scale(1.5); */
+    /*transform: scaleX(1.5);*/
+    /* decrease size */
+    /*transform: scaleX(0.5);*/
+    transform: scaleY(0.5);
+    /*transform: scale(0.5);*/
+}
