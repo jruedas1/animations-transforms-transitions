@@ -1,0 +1,41 @@
+/*
+@keyframes name-of-animation
+0% and 100% are the start and end steps
+we can add more steps like 25, 50, 75 defined in %
+
+you can also have the keywords
+from
+to
+these are the same as
+0%
+100%
+from and to are syntactic sugar
+*/
+
+body {
+    background-color: #eae067;
+    font-family: Raleway, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-title {
+    margin-top: 30px;
+}
+
+.box {
+    width: 300px;
+    height: 60px;
+    background-color: #20963c;
+    margin-top: 30px;
+    cursor: pointer;
+    animation: move 1s infinite
+}
+
+@keyframes move {
+    0%, 100% {margin-top: 30px; background-color: green;}
+    25%, 75% {margin-top: 100px; background-color: blue;}
+    50% {margin-top: 150px; background-color: red;}
+}
+
