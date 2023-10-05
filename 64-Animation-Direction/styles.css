@@ -16,7 +16,7 @@ body {
   background-color: #2096c3;
   margin-top: 30px;
   cursor: pointer;
-  animation-name: rotate;
+  animation-name: slide;
   animation-duration: 5000ms; /* s / ms */
   animation-timing-function: ease-in-out;
   /*animation-delay: 2s; !* s / ms *!*/
@@ -32,7 +32,7 @@ body {
   animation-direction: alternate-reverse;
 }
 
-@keyframes rotate {
+@keyframes slide {
   0% { margin-left: 0;}
   100% { margin-left: 300px; }
 }

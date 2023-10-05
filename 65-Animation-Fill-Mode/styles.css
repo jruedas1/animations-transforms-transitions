@@ -1,0 +1,36 @@
+body {
+  background-color: #eae067;
+  font-family: Raleway, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-title {
+  margin-top: 30px;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  background-color: #2096c3;
+  margin-top: 30px;
+  cursor: pointer;
+  animation-name: slide;
+  animation-duration: 2.5s;
+  animation-delay: 2s;
+  animation-fill-mode: none;
+  /*
+    animation-fill-mode
+    default value: none
+    backwards: instead of the state defined in the stylesheet,
+    it starts with the style defined for 0%
+    forwards: the style defined for 100 becomes permanent after the end of the animation
+    both: the initial animation state overrides the sheet-defined style, AND after the animation is over the 100 property stays
+  */
+}
+
+@keyframes slide {
+  0% { margin-left: 0; background-color: #f0a1c9;}
+  100% { margin-left: 300px; background-color: #673ab7; }
+}
