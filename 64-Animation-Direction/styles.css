@@ -1,0 +1,69 @@
+body {
+  background-color: #eae067;
+  font-family: Raleway, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-title {
+  margin-top: 30px;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  background-color: #2096c3;
+  margin-top: 30px;
+  cursor: pointer;
+  animation-name: rotate;
+  animation-duration: 5000ms; /* s / ms */
+  animation-timing-function: ease-in-out;
+  /*animation-delay: 2s; !* s / ms *!*/
+  animation-iteration-count: infinite;
+  /*
+    animation-direction
+    alternate, alternate-reverse, normal, reverse
+    normal: 0 to 100
+    reverse: 100 to 0
+    alternate: 0 to 100 to 0
+    alternate-reverse: 100 to 0 to 100
+  */
+  animation-direction: alternate-reverse;
+}
+
+@keyframes rotate {
+  0% { margin-left: 0;}
+  100% { margin-left: 300px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
