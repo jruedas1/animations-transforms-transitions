@@ -1,0 +1,27 @@
+body {
+  background-color: #96b4f7;
+  font-family: Raleway, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-title {
+  margin-top: 30px;
+}
+
+.circular-spinner {
+  margin-top: 30px;
+  width: 60px;
+  height: 60px;
+  border: 10px solid white;
+  border-top-color: #e91e63;
+  border-bottom-color: #e91e63;
+  border-radius: 50%;
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}
