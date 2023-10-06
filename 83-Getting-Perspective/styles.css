@@ -1,0 +1,28 @@
+body {
+    background-color: #39393a;
+    color: white;
+    font-family: Raleway, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-title {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.wrapper, .box {
+    width: 200px;
+    height: 200px;
+}
+
+.wrapper {
+    border: 1px solid white;
+}
+
+.box {
+    background-color: red;
+    transform: perspective(400px) translateZ(-100px);
+}
