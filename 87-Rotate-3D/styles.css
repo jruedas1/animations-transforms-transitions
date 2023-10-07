@@ -1,0 +1,40 @@
+body {
+    background-color: #39393a;
+    color: white;
+    font-family: Raleway, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-title {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.wrapper {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #fff;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: perspective(400px) rotate3d(5, 1, 4, 45deg) ;
+}
+
+/*
+    We've learned the plain transform: rotate effect, this is normal expected rotation on the 2d plane
+    rotateX rotates 3dimensionally on the x axis (horizontal plane flip)
+    rotateY rotates 3dimensionally on the y axis (vertical plane flip)
+    rotateZ rotates on the z axis -- appears to be a 2d plane rotation
+    rotate 3d (x, y, z, angle)
+    x, y, z are multipliers, or vector coordinates, combining to specify the direction of the vector denoting the axis of the rotation
+    assume the values are the matrix multiplier for each of the axes, so, numbers
+    angle is deg, radian, gradian, turn
+    in only x axis, do rotate3d (1, 0, 0, 45deg) rotateX 45deg
+    rotate3d (1, 1, 1, 45deg) rotate in all directions 45 deg
+*/
