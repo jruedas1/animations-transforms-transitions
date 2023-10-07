@@ -18,11 +18,26 @@ body {
     height: 200px;
 }
 
+/*
+perspective-origin
+one or two values
+x-axis, y-axis
+can be keywords left / center / right / bottom / top
+or percentages, or lengths
+
+use perspective-origin with perspective
+on parent
+use transform percent() on actual element you are
+applying it to
+*/
+
 .wrapper {
     border: 1px solid white;
+    perspective: 200px;
+    perspective-origin: bottom left;
 }
 
 .box {
     background-color: red;
-    transform: perspective(400px) translateZ(-100px);
+    transform: translateZ(-100px);
 }
