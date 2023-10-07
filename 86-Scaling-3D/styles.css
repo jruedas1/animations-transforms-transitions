@@ -1,0 +1,40 @@
+body {
+    background-color: #39393a;
+    color: white;
+    font-family: Raleway, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-title {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.wrapper {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #fff;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: perspective(400px) scale3d(1, 1, 2) rotateX(45deg);
+}
+
+/*
+ScaleX, Scale Y, ScaleZ
+Scale3d(sx, sy, sz)
+Scale3d(1, 1, 1) - original, non-scaled size
+Scale3d(2, 1, 1) = scaleX(2)
+Scale3d(1, 2, 1) = scaleY(2)
+Scale3d(1, 1, 2) = scaleZ(2) no observable effect
+To observe, we must rotate
+Scale3d(1, 1, 5) with rotateX(45deg) looks like a red carpet stretching away from me
+Remember you must define a perspective to get any z-axis transform
+In 3d space we need a perspective
+*/
